@@ -1,0 +1,58 @@
+.body{
+  -fx-font-size: 14;
+  -fx-background-color: #555;
+}
+
+.menu-bar {
+    -fx-text-fill: white;
+    -fx-background-color: #555;
+    -fx-selection-bar: #555;
+}.menu-bar:focused{
+    -fx-background-color: #555;
+}
+
+.menu .context-menu{
+    -fx-background-color: #555;
+}.menu:hover{
+    -fx-background-color: #777;
+}.menu .label{
+    -fx-text-fill: white;
+}
+
+.menu-item{
+    -fx-background-color: #555;
+}.menu-item:focused {
+     -fx-background-color: #777;
+}
+
+.field{
+    -fx-padding: 7;
+    -fx-max-height: 120px;
+    -fx-max-width: 120px;
+    -fx-min-height: 120px;
+    -fx-min-width: 120px;
+    -fx-font-size: 60 !important;
+
+    -fx-background-color: #444;
+    -fx-border-color: #333;
+}.field:hover{
+    -fx-background-color: #535353;
+}
+
+.fieldX{
+    -fx-text-fill: red;
+}.fieldO{
+    -fx-text-fill: darkblue;
+}.disableHover:hover{
+    -fx-background-color: #444 !important;
+}
+
+.info{
+}.info .label{
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+}
+.info-element{
+    -fx-max-width: 120px;
+    -fx-min-width: 120px;
+}

@@ -1,0 +1,51 @@
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<GridPane fx:controller="sample.Controller" styleClass="body" xmlns:fx="http://javafx.com/fxml">
+    <VBox>
+        <MenuBar styleClass="menu-bar">
+            <Menu styleClass="menu" text="Menu">
+                <items>
+                    <MenuItem styleClass="menu-item" text="player vs bot" onAction="#turnOnBot"></MenuItem>
+                    <MenuItem styleClass="menu-item" text="player vs player" onAction="#turnOffBot"></MenuItem>
+                    <MenuItem styleClass="menu-item" text="restart" onAction="#restartMenu"></MenuItem>
+                </items>
+            </Menu>
+        </MenuBar>
+        <HBox>
+            <Button styleClass="field" onMousePressed="#pressedField11" fx:id="field11"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField21" fx:id="field21"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField31" fx:id="field31"> </Button>
+        </HBox>
+        <HBox>
+            <Button styleClass="field" onMousePressed="#pressedField12" fx:id="field12"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField22" fx:id="field22"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField32" fx:id="field32"> </Button>
+        </HBox>
+        <HBox>
+            <Button styleClass="field" onMousePressed="#pressedField13" fx:id="field13"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField23" fx:id="field23"> </Button>
+            <Button styleClass="field" onMousePressed="#pressedField33" fx:id="field33"> </Button>
+        </HBox>
+        <HBox styleClass="info">
+            <HBox styleClass="info-element">
+                <Label styleClass="info" fx:id="rounds">Rounds: 0</Label>
+            </HBox>
+            <HBox styleClass="info-element">
+                <Label style="-fx-text-fill: red">❌</Label>
+                <Label styleClass="info" fx:id="x">: 0</Label>
+            </HBox>
+            <HBox styleClass="info-element">
+                <Label style="-fx-text-fill: darkblue">◯</Label>
+                <Label styleClass="info" fx:id="o">: 0</Label>
+            </HBox>
+        </HBox>
+    </VBox>
+</GridPane>

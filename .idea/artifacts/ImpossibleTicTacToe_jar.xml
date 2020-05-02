@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ImpossibleTicTacToe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ImpossibleTicTacToe_jar</output-path>
+    <root id="archive" name="ImpossibleTicTacToe.jar">
+      <element id="module-output" name="ImpossibleTicTacToe" />
+    </root>
+  </artifact>
+</component>
